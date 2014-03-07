@@ -30,8 +30,8 @@
         {
             this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.splitContainer = new System.Windows.Forms.SplitContainer();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.jeansRadioButton = new System.Windows.Forms.RadioButton();
+            this.tshirtsRadioButton = new System.Windows.Forms.RadioButton();
             this.maxPriceLabel = new System.Windows.Forms.Label();
             this.maxPriceTextBox = new System.Windows.Forms.TextBox();
             this.minPriceLabel = new System.Windows.Forms.Label();
@@ -64,8 +64,8 @@
             // splitContainer.Panel1
             // 
             this.splitContainer.Panel1.Controls.Add(this.updateButton);
-            this.splitContainer.Panel1.Controls.Add(this.radioButton2);
-            this.splitContainer.Panel1.Controls.Add(this.radioButton1);
+            this.splitContainer.Panel1.Controls.Add(this.jeansRadioButton);
+            this.splitContainer.Panel1.Controls.Add(this.tshirtsRadioButton);
             this.splitContainer.Panel1.Controls.Add(this.maxPriceLabel);
             this.splitContainer.Panel1.Controls.Add(this.maxPriceTextBox);
             this.splitContainer.Panel1.Controls.Add(this.minPriceLabel);
@@ -78,29 +78,29 @@
             this.splitContainer.SplitterDistance = 125;
             this.splitContainer.TabIndex = 1;
             // 
-            // radioButton2
+            // jeansRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(15, 87);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(53, 17);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.Text = "Jeans";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.jeansRadioButton.AutoSize = true;
+            this.jeansRadioButton.ForeColor = System.Drawing.Color.White;
+            this.jeansRadioButton.Location = new System.Drawing.Point(15, 87);
+            this.jeansRadioButton.Name = "jeansRadioButton";
+            this.jeansRadioButton.Size = new System.Drawing.Size(53, 17);
+            this.jeansRadioButton.TabIndex = 5;
+            this.jeansRadioButton.Text = "Jeans";
+            this.jeansRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // tshirtsRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(15, 64);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "T-Shirts";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.tshirtsRadioButton.AutoSize = true;
+            this.tshirtsRadioButton.Checked = true;
+            this.tshirtsRadioButton.ForeColor = System.Drawing.Color.White;
+            this.tshirtsRadioButton.Location = new System.Drawing.Point(15, 64);
+            this.tshirtsRadioButton.Name = "tshirtsRadioButton";
+            this.tshirtsRadioButton.Size = new System.Drawing.Size(61, 17);
+            this.tshirtsRadioButton.TabIndex = 4;
+            this.tshirtsRadioButton.TabStop = true;
+            this.tshirtsRadioButton.Text = "T-Shirts";
+            this.tshirtsRadioButton.UseVisualStyleBackColor = true;
             // 
             // maxPriceLabel
             // 
@@ -152,6 +152,7 @@
             this.updateButton.TabIndex = 6;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // MainForm
             // 
@@ -181,8 +182,8 @@
         private System.Windows.Forms.TextBox minPriceTextBox;
         private System.Windows.Forms.Label maxPriceLabel;
         private System.Windows.Forms.TextBox maxPriceTextBox;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton jeansRadioButton;
+        private System.Windows.Forms.RadioButton tshirtsRadioButton;
         private System.Windows.Forms.Button updateButton;
     }
 }
